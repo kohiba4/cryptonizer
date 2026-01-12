@@ -6,7 +6,10 @@ import { cn } from "@/lib/utils"
 import { AnimatedBeam } from "@/components/ui/animated-beam"
 import { Brain } from "lucide-react";
 
-const Circle = forwardRef(({ className, children }, ref) => {
+const Circle = forwardRef<
+  HTMLDivElement,
+  { className?: string; children?: React.ReactNode }
+>(({ className, children }, ref) => {
     return (
         <div
             ref={ref}
@@ -22,7 +25,7 @@ const Circle = forwardRef(({ className, children }, ref) => {
 
 Circle.displayName = "Circle"
 
-export function AnimatedBeamMultipleOutputDemo({ className }) {
+export function AnimatedBeamMultipleOutputDemo({ className }: { className?: string }) {
     const containerRef = useRef(null)
     const div1Ref = useRef(null)
     const div2Ref = useRef(null)
