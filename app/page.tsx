@@ -36,7 +36,7 @@ export default function Home() {
         {/* Animated gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-chart-3/10 to-chart-2/10 animate-gradient" />
         
-        <div className="relative container mx-auto px-6 py-20 md:py-32">
+        <div className="relative container mx-auto px-6 pt-8 pb-20 md:pt-12 md:pb-32">
           <div
             className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
               isVisible ?  "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
