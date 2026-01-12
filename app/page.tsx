@@ -41,7 +41,7 @@ export default function Home() {
               isVisible ?  "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-chart-3 to-chart-2 bg-clip-text text-transparent animate-text-shimmer">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-chart-3 to-chart-2 bg-clip-text text-transparent animate-text-shimmer pb-2">
               Cryptonizer
             </h1>
             <p className="text-xl md:text-2xl mb-4 text-foreground/90 font-medium">
@@ -321,14 +321,9 @@ export default function Home() {
           
           <div className="max-w-2xl mx-auto">
             <div className="bg-card rounded-2xl p-8 border border-border hover:border-primary/50 hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center gap-6 mb-6">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-chart-4 to-chart-1 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
-                  NH
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold">Dr. Nabil M. A. Hewahi</h3>
-                  <p className="text-muted-foreground">Project Supervisor</p>
-                </div>
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold">Dr. Nabil M. A. Hewahi</h3>
+                <p className="text-muted-foreground">Project Supervisor</p>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
@@ -474,16 +469,9 @@ function TeamMemberCard({
 }) {
   return (
     <div className="bg-card rounded-xl p-8 shadow-md border border-border hover:border-primary/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-      <div className="flex items-center gap-6 mb-6">
-        <div
-          className={`w-20 h-20 rounded-full bg-gradient-to-br ${gradientClass} flex items-center justify-center text-2xl font-bold text-white shadow-lg`}
-        >
-          {initials}
-        </div>
-        <div>
-          <h3 className="text-2xl font-bold">{name}</h3>
-          <p className="text-muted-foreground">{major}</p>
-        </div>
+      <div className="mb-6">
+        <h3 className="text-2xl font-bold">{name}</h3>
+        <p className="text-muted-foreground">{major}</p>
       </div>
       
       <div className="space-y-3">
