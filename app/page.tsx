@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
-import { AnimatedBeamMultipleOutputDemo } from "@/components/animatedbeam";
+import { AnimatedBeamMultipleOutputDemo } from "@/components/animated-beam-demo";
 import { 
   Brain, 
   ChartColumnBig, 
