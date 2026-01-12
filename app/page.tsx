@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
+import { AnimatedBeamMultipleOutputDemo } from "@/components/animatedbeam";
 import { 
   Brain, 
   ChartColumnBig, 
@@ -65,6 +66,8 @@ export default function Home() {
                 Meet the Team
               </a>
             </div>
+            
+            <AnimatedBeamMultipleOutputDemo className="mt-8" />
           </div>
         </div>
       </section>
@@ -128,7 +131,7 @@ export default function Home() {
             />
             <FeatureCard
               title="LSTM Price Predictions"
-              description="Advanced neural networks trained on historical 4-hour price data with 68. 4% directional accuracy for short-term forecasts."
+              description="Advanced neural networks trained on historical 4-hour & 1-day price data with 68. 4% directional accuracy for short-term forecasts."
               icon={<BrainCircuit className="w-12 h-12" />}
               colorClass="from-chart-3 to-chart-5"
             />
